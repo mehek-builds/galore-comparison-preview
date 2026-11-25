@@ -829,19 +829,14 @@
 
   /* feature cards: small live components */
   function loop(card, ms, fn) {
-    var t = 0, on = false, timers = [];
+    var t = 0, timers = [];
     var T = function (f, d) { timers.push(setTimeout(f, d)); };
     var go = function () { timers.forEach(clearTimeout); timers = []; fn(T); t = setTimeout(go, ms); };
-    if (reduce || !('IntersectionObserver' in window)) { card.classList.add('play'); return; }
-    new IntersectionObserver(function (es) {
-      var v = es[0].isIntersecting; if (v === on) return; on = v;
-      if (v) go(); else { clearTimeout(t); timers.forEach(clearTimeout); timers = []; }
-    }, { threshold: 0.35 }).observe(card);
+    if (reduce) { card.classList.add('play'); return; }
+    go();
   }
   function cardRipple(card, x, y, big) {
-    if (reduce) return; var b = card.getBoundingClientRect(), r = document.createElement('i');
-    r.className = 'fc-rip' + (big ? ' big' : ''); r.style.left = (x - b.left) + 'px'; r.style.top = (y - b.top) + 'px';
-    card.appendChild(r); r.addEventListener('animationend', function () { r.remove(); });
+    return;
   }
   var replay = function (card) { card.classList.remove('play'); void card.offsetWidth; card.classList.add('play'); };
   $$('.fc').forEach(function (card) {
