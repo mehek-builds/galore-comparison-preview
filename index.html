@@ -53,8 +53,10 @@ html.gx-intro:not(.gx-go) body.intro :is(.hero-h span,.hero-sub,.hero-btns,.hero
 <header class="hd" data-header>
   <a class="hd-logo" href="/" aria-label="Galore home"><span data-galore-wordmark></span></a>
   <nav class="hd-nav" aria-label="Sections">
-    <a href="/dashboard-preview.html">Log in</a>
+    <a href="/dashboard-preview.html">Dashboard preview</a>
     <a href="#example">How it works</a>
+    <a href="/about">About</a>
+    <a href="/pricing">Pricing</a>
     <a href="#questions">FAQs</a>
   </nav>
   <div class="hd-cta">
@@ -63,8 +65,10 @@ html.gx-intro:not(.gx-go) body.intro :is(.hero-h span,.hero-sub,.hero-btns,.hero
   </div>
 </header>
 <div class="mnav" id="mnav" hidden>
-  <a href="/dashboard-preview.html">Log in</a>
+  <a href="/dashboard-preview.html">Dashboard preview</a>
   <a href="#example">How it works</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
   <a href="#questions">FAQs</a>
   <a class="btn btn-go" href="/waitlist" data-sheet><span>Join the waitlist</span></a>
 </div>
@@ -78,9 +82,8 @@ html.gx-intro:not(.gx-go) body.intro :is(.hero-h span,.hero-sub,.hero-btns,.hero
     <button class="hero-example" type="button" data-hero-example><span>Try this idea</span><strong>AI will need much more electricity.</strong></button>
     <div class="hero-btns">
       <a class="btn btn-go" href="/waitlist" data-sheet data-join><span>Join the waitlist</span></a>
-      <a class="btn btn-ghost" href="#try" data-focus-try><span>Try an example</span></a>
     </div>
-    <p class="hero-return">Already have an account? <a href="/dashboard-preview.html">Log in</a></p>
+    <p class="hero-return"><a href="/dashboard-preview.html">Explore the interactive dashboard preview</a></p>
     <div id="try" data-console="hero"></div>
   </div>
   
@@ -140,10 +143,11 @@ html.gx-intro:not(.gx-go) body.intro :is(.hero-h span,.hero-sub,.hero-btns,.hero
       <div class="preview-app-panel" role="tabpanel" id="preview-panel-watchlist" aria-labelledby="preview-tab-watchlist" hidden><p class="preview-app-kicker">Your watchlist</p><h3>Know why you are watching.</h3><p>Follow an idea and see relevant updates alongside the reason you added it.</p><div class="preview-app-belief">Your watched ideas will appear here.</div></div>
     </div>
   </div>
-  <p class="preview-app-caption">Illustrative layout. No returns or trades are shown.</p>
+  <p class="preview-app-caption">Illustrative layout. <a href="/dashboard-preview.html">Open the interactive dashboard walkthrough</a> to explore research, watchlist, a simulated paper portfolio, people, and account settings.</p>
 </section>
 
-<section class="markets" id="markets" aria-label="Example markets" data-depth=".45">
+<section class="markets" id="markets" aria-label="Illustrative markets to explore" data-depth=".45">
+  <p class="market-note">Examples to explore. No live quotes, prices, or trading access are shown here.</p>
   <div class="tape" data-tape></div>
 </section>
 
@@ -152,19 +156,13 @@ html.gx-intro:not(.gx-go) body.intro :is(.hero-h span,.hero-sub,.hero-btns,.hero
   <div class="fgrid">
 
     <article class="fc fc-records rv" data-fc="records">
-      <header><h3>Who made the call?</h3></header><p class="feature-lead">See a creator's public trades together, including calls that did not work out.</p>
+      <header><h3>Who made the call?</h3></header><p class="feature-lead">A public record should show the original post, date, later updates, exits, and calls that did not work out.</p>
       <div class="fc-body">
-        <a class="rec" href="/waitlist?profile=jeremy-lefebvre" data-gate="creator" data-slug="jeremy-lefebvre" data-name="Jeremy Lefebvre" data-role="Investing creator">
-          <img class="av" src="https://yt3.ggpht.com/-WVSshxJrXObjmEVHsy-eTWgfX_oNT1iFyBDiDzgXjJXTrZFas98K9cIogV0r50ILADxiG7wSQ=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="var s=document.createElement('span');s.className='av';s.textContent='JL';this.replaceWith(s)"><span class="rec-n"><b>Jeremy Lefebvre</b><i><img class="pf" src="/landing/assets/social/youtube.svg" alt="YouTube">Investing creator</i></span><span class="call"><em>+AXP</em> Buy</span>
-        </a>
-        <a class="rec" href="/waitlist?profile=jim-cramer" data-gate="creator" data-slug="jim-cramer" data-name="Jim Cramer" data-role="Investing creator">
-          <img class="av" src="https://pbs.twimg.com/profile_images/1461426655046606860/PzlSk4fZ_400x400.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="var s=document.createElement('span');s.className='av';s.textContent='JC';this.replaceWith(s)"><span class="rec-n"><b>Jim Cramer</b><i><img class="pf" src="/landing/assets/social/x.svg" alt="X">Investing creator</i></span><span class="call"><em>+STZ</em> New</span>
-        </a>
-        <a class="rec" href="/waitlist?profile=stas-serfes" data-gate="creator" data-slug="stas-serfes" data-name="Stas Serfes" data-role="Investing creator">
-          <img class="av" src="https://yt3.googleusercontent.com/Cqssqh1t3_DMNOxfg7NZKx-BEdKRmyE-SeVgGM5lXVGk1-i7oG877teH8yxbu-VASEz4eaYhSw=s176-c-k-c0x00ffffff-no-rj" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="var s=document.createElement('span');s.className='av';s.textContent='SS';this.replaceWith(s)"><span class="rec-n"><b>Stas Serfes</b><i><img class="pf" src="/landing/assets/social/tiktok.svg" alt="TikTok">Investing creator</i></span><span class="call"><em>+NVDA</em> Buy</span>
-        </a>
+        <div class="rec"><span class="av">A</span><span class="rec-n"><b>Sample creator</b><i>Illustrative profile</i></span><span class="call">Source post</span></div>
+        <div class="rec"><span class="av">B</span><span class="rec-n"><b>Follow-up</b><i>Disclosure and date</i></span><span class="call">Update</span></div>
+        <div class="rec"><span class="av">C</span><span class="rec-n"><b>Outcome</b><i>Include losing calls too</i></span><span class="call">Review</span></div>
       </div>
-      <div class="fc-foot"><a class="lk" href="/waitlist" data-sheet>Join the waitlist</a></div>
+      <div class="fc-foot"><a class="lk" href="/dashboard-preview.html#people">View the people walkthrough</a></div>
     </article>
 
     <article class="fc fc-watch rv" data-fc="watch">
@@ -183,22 +181,22 @@ html.gx-intro:not(.gx-go) body.intro :is(.hero-h span,.hero-sub,.hero-btns,.hero
       <header><h3>Who else can I follow?</h3></header><p class="feature-lead">Browse the public record of creators, investors, and politicians.</p>
       <div class="fc-body">
         <ol class="lb" data-lb>
-          <li><a href="/waitlist?profile=nancy-pelosi" data-gate="politician" data-slug="nancy-pelosi" data-name="Nancy Pelosi" data-role="Former Speaker of the House"><img class="av" src="/landing/assets/product-portraits/nancy-pelosi.jpg" alt="" loading="lazy"><span class="rec-n"><b>Nancy Pelosi</b><i>Former Speaker of the House</i></span><span class="ret">View record</span></a></li>
-          <li><a href="/waitlist?profile=warren-buffett" data-gate="creator" data-slug="warren-buffett" data-name="Warren Buffett" data-role="Berkshire Hathaway chairman emeritus"><img class="av" src="https://upload.wikimedia.org/wikipedia/commons/d/df/Warren_Buffett_in_2010_%28cropped%29.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="var s=document.createElement('span');s.className='av';s.textContent='WB';this.replaceWith(s)"><span class="rec-n"><b>Warren Buffett</b><i>Berkshire Hathaway chairman emeritus</i></span><span class="ret">View record</span></a></li>
-          <li><a href="/waitlist?profile=cathie-wood" data-gate="creator" data-slug="cathie-wood" data-name="Cathie Wood" data-role="ARK Invest founder and CEO"><img class="av" src="https://pbs.twimg.com/profile_images/1782845672829423617/xuyhQIY5_400x400.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="var s=document.createElement('span');s.className='av';s.textContent='CW';this.replaceWith(s)"><span class="rec-n"><b>Cathie Wood</b><i>ARK Invest founder and CEO</i></span><span class="ret">View record</span></a></li>
-          <li><a href="/waitlist?profile=bill-ackman" data-gate="creator" data-slug="bill-ackman" data-name="Bill Ackman" data-role="Pershing Square CEO"><img class="av" src="https://pbs.twimg.com/profile_images/1619837521059348481/9UeNLFmD_400x400.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="var s=document.createElement('span');s.className='av';s.textContent='BA';this.replaceWith(s)"><span class="rec-n"><b>Bill Ackman</b><i>Pershing Square CEO</i></span><span class="ret">View record</span></a></li>
-          <li><a href="/waitlist?profile=david-tepper" data-gate="creator" data-slug="david-tepper" data-name="David Tepper" data-role="Appaloosa founder, Carolina Panthers owner"><span class="av">DT</span><span class="rec-n"><b>David Tepper</b><i>Appaloosa founder, Carolina Panthers owner</i></span><span class="ret">View record</span></a></li>
+          <li><a href="/dashboard-preview.html#people"><img class="av" src="/landing/assets/product-portraits/nancy-pelosi.jpg" alt="" loading="lazy"><span class="rec-n"><b>Nancy Pelosi</b><i>Former Speaker of the House</i></span><span class="ret">View record</span></a></li>
+          <li><a href="/dashboard-preview.html#people"><img class="av" src="https://upload.wikimedia.org/wikipedia/commons/d/df/Warren_Buffett_in_2010_%28cropped%29.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="var s=document.createElement('span');s.className='av';s.textContent='WB';this.replaceWith(s)"><span class="rec-n"><b>Warren Buffett</b><i>Berkshire Hathaway chairman emeritus</i></span><span class="ret">View record</span></a></li>
+          <li><a href="/dashboard-preview.html#people"><img class="av" src="https://pbs.twimg.com/profile_images/1782845672829423617/xuyhQIY5_400x400.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="var s=document.createElement('span');s.className='av';s.textContent='CW';this.replaceWith(s)"><span class="rec-n"><b>Cathie Wood</b><i>ARK Invest founder and CEO</i></span><span class="ret">View record</span></a></li>
+          <li><a href="/dashboard-preview.html#people"><img class="av" src="https://pbs.twimg.com/profile_images/1619837521059348481/9UeNLFmD_400x400.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="var s=document.createElement('span');s.className='av';s.textContent='BA';this.replaceWith(s)"><span class="rec-n"><b>Bill Ackman</b><i>Pershing Square CEO</i></span><span class="ret">View record</span></a></li>
+          <li><a href="/dashboard-preview.html#people"><span class="av">DT</span><span class="rec-n"><b>David Tepper</b><i>Appaloosa founder, Carolina Panthers owner</i></span><span class="ret">View record</span></a></li>
         </ol>
       </div>
-      <div class="fc-foot"><span class="cap">Public information, with sources shown in the app</span><a class="lk" href="/waitlist" data-sheet>Join the waitlist</a></div>
+      <div class="fc-foot"><span class="cap">Illustrative directory. No holdings or returns asserted here</span><a class="lk" href="/waitlist" data-sheet>Join the waitlist</a></div>
     </article>
 
     <article class="fc fc-post rv" data-fc="post">
-      <header><h3>Where did that idea come from?</h3></header><p class="feature-lead">Start with a post and see the investing belief behind it.</p>
+      <header><h3>Where did that idea come from?</h3></header><p class="feature-lead">See how a public post could become an investing idea. The preview does not read links.</p>
       <div class="fc-body">
         <div class="post-top">
           <div class="thumb"><span class="pbtn" aria-hidden="true"></span><span class="thumb-t">Data Center Richness <i>on YouTube</i></span></div>
-          <div class="paste"><span>Start with a public post</span>
+          <div class="paste"><span>Choose a platform to try a sample link</span>
             <span class="soc">
               <button type="button" class="soc-b" data-label="YouTube" title="YouTube" aria-label="Paste a YouTube link"><img src="/landing/assets/social/youtube.svg" alt="" loading="lazy"></button>
               <button type="button" class="soc-b" data-label="TikTok" title="TikTok" aria-label="Paste a TikTok link"><img src="/landing/assets/social/tiktok.svg" alt="" loading="lazy"></button>
@@ -210,10 +208,10 @@ html.gx-intro:not(.gx-go) body.intro :is(.hero-h span,.hero-sub,.hero-btns,.hero
           </div>
         </div>
         <ol class="flow">
-          <li class="s1"><span class="k">From the post</span><p>Bloom fuel cells can power data centers on-site.</p></li>
+          <li class="s1"><span class="k">From the post</span><p>Example claim: On-site power may help data centers facing grid delays.</p></li>
           <li class="s2"><span class="k">Belief</span><p>AI data centers facing grid delays will buy more on-site power.</p></li>
-          <li class="s3"><span class="k">Galore stock ideas</span>
-            <p class="ideas"><span><img src="/landing/assets/logos/BE.png" alt="" loading="lazy"><b>BE</b> Bloom Energy, fuel cells</span><span><img src="/landing/assets/logos/ET.png" alt="" loading="lazy"><b>ET</b> Energy Transfer, natural gas</span></p></li>
+          <li class="s3"><span class="k">Illustrative connections</span>
+            <p class="ideas"><span><b>Fuel cells</b> Could supply some on-site power</span><span><b>Energy infrastructure</b> Could affect gas delivery</span></p></li>
         </ol>
       </div>
     </article>
@@ -231,8 +229,10 @@ html.gx-intro:not(.gx-go) body.intro :is(.hero-h span,.hero-sub,.hero-btns,.hero
     <details open><summary>What does Galore show me?</summary><p>Start with an idea, see investments connected to it, read the evidence and risks, and compare historical performance. You can also follow public trades and build a paper portfolio.</p></details>
     <details><summary>Can I trade on Galore today?</summary><p>You can use a paper account after signing up. Live brokerage trading is not available yet. <a href="/waitlist" data-sheet>Join the waitlist</a>.</p></details>
     <details><summary>Who can I follow on Galore?</summary><p>Explore public trades from creators like Jeremy Lefebvre and Jim Cramer, and disclosed holdings from people like Nancy Pelosi, Warren Buffett and Cathie Wood. Want someone else? <a href="/waitlist?request=creator" data-sheet data-request="creator">Request a creator</a>.</p></details>
-    <details><summary>Can I test an investing idea before I trade it?</summary><p>Yes. Test Your Belief lets you type an idea or pick one to see how it would have performed historically.</p></details>
-    <details><summary>Where can I track my positions?</summary><p>Open Portfolio in the Galore app to see your positions, allocations and performance.</p></details>
+    <details><summary>Can I test an investing idea before I trade it?</summary><p>The interactive preview shows example connections, evidence questions, and risks. A real backtest should include dated prices, weights, fees, assumptions, and a same-period benchmark. No performance is claimed by this preview. <a href="/dashboard-preview.html#research">Explore the sample research view</a>.</p></details>
+    <details><summary>Where can I track my positions?</summary><p>The <a href="/dashboard-preview.html#portfolio">paper portfolio walkthrough</a> shows simulated cash and practice orders. Actual account data would appear in the app after access.</p></details>
+    <details><summary>Does joining the waitlist create an account?</summary><p>No. The waitlist is a request for access. An invitation would explain email confirmation and paper-account setup. Access is offered in batches, with no guaranteed timing.</p></details>
+    <details><summary>How much does Galore cost?</summary><p>Waitlist signup is free. Membership pricing and any trading fees will be shared before paid access is offered; this preview does not quote a fee.</p></details>
   </div>
 </section>
 
