@@ -70,6 +70,7 @@ body{font-size:17px}
 .dash .sec-intro{margin:0 auto 58px;text-align:center}
 .devices{padding-bottom:11%}
 .markets{padding-top:18px}
+.market-note{max-width:1160px;margin:0 auto;padding:8px 24px 16px;color:rgba(232,238,242,.58);font-size:12px;text-align:center}
 .feat{padding-top:clamp(92px,10vw,130px)}
 .feat .sec-h{margin-bottom:20px}
 .feat .sec-intro{margin:0 auto 55px}
@@ -110,6 +111,9 @@ body{font-size:17px}
 .sheet .fld input{background:#000412;color:#E8EEF2}
 .sheet .fld input:focus{border-color:#2BF08A}
 .sheet .wl-form .btn-go{min-height:48px}
+.preview-signup-context{max-width:420px;margin:12px 0 24px;color:rgba(232,238,242,.7);font-size:14px;line-height:1.45}
+.wl-form .wl-note{grid-column:1/-1;margin:8px 0 3px}
+.preview-app-caption a{color:#2BF08A;text-decoration:underline;text-underline-offset:4px}
 .story-tabs button:focus-visible,.story-action a:focus-visible,.btn:focus-visible{outline:2px solid #2BF08A;outline-offset:3px}
 @media(max-width:760px){.sheet{background:#000412}.site-mobile-cta{box-shadow:none}}
 @media(max-width:760px){
