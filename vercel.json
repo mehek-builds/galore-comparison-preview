@@ -1,11 +1,11 @@
 {
   "rewrites": [
     { "source": "/landing/assets/:path*", "destination": "https://trygalore.com/landing/assets/:path*" },
-    { "source": "/waitlist", "destination": "/waitlist.html" },
+    { "source": "/waitlist", "destination": "/index.html" },
     { "source": "/about", "destination": "/about.html" },
     { "source": "/pricing", "destination": "/pricing.html" },
     { "source": "/contact", "destination": "/contact.html" },
-    { "source": "/live", "destination": "/live.html" },
+    { "source": "/live", "destination": "/index.html" },
     { "source": "/privacy", "destination": "https://trygalore.com/privacy" },
     { "source": "/terms", "destination": "https://trygalore.com/terms" },
     { "source": "/waitlist-privacy.html", "destination": "https://trygalore.com/waitlist-privacy.html" }

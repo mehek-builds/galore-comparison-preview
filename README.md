@@ -1,7 +1,18 @@
 # Galore design preview
 
-An isolated preview of the Galore landing page. It uses the #000412 canvas, #E8EEF2 copy, and #2BF08A for primary actions and selected states.
+This is a separate review site. It does not alter trygalore.com or the Galore app. The waitlist interaction is simulated in the browser and saves nothing. The dashboard is an illustrative layout without performance figures or trades. Contact points to the current live contact page.
 
-The waitlist interaction is simulated in the browser. No email is sent and no information is stored by this preview. The dashboard link opens a static visual preview. It does not connect to the production app or permit trading.
+## Comparison ideas implemented
 
-Built for a review of the copy, layout, interaction, and mobile behavior. The live site is unaffected.
+1. The hero says what to do in ordinary language and gives one primary action.
+2. A single belief carries through the explanation instead of changing examples at every step.
+3. The example reveals connections, checks, and follow-through through direct tabs.
+4. Each connection gets a short causal explanation.
+5. Risks and historical comparison appear before any portfolio action.
+6. The dashboard preview lets visitors explore Home, Explore, Portfolio, and Watchlist without invented returns.
+7. The six feature modules use question headings and short leads that answer a visitor's next question.
+8. The page uses open sections, borders, and spacing instead of a grid of decorative cards.
+9. The site uses #000412, #E8EEF2, and #2BF08A for the main canvas, text, and attention.
+10. Mobile navigation, a persistent waitlist action, keyboard tabs, reduced motion, and readable disclosure controls carry the same story to a small screen.
+
+Motion in this build includes the slow background water, continuous market tape, typing prompt, feature demonstrations, tab changes, menu, waitlist sheet, FAQ disclosure, and short press feedback. The review site uses `noindex, nofollow`.
