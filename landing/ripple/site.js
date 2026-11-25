@@ -64,7 +64,7 @@
   var initials = function (n) { return n.split(/\s+/).map(function (w) { return w[0]; }).join('').slice(0, 2).toUpperCase(); };
 
   /* ------------------------------------------------------------ waitlist sheet: the live signup contract */
-  var SIGNUP = APP + 'signup';
+  var SIGNUP = LOCAL_DRAFT ? APP : APP + 'signup';
   var gt = function (name, props) { try { if (typeof window.galoreTrack === 'function') window.galoreTrack(name, props || {}); } catch (e) {} };
   var ATTR_KEY = 'galore_attr';
   function attribution() { var saved = {}; try { saved = JSON.parse(sessionStorage.getItem(ATTR_KEY) || '{}') || {}; } catch (e) {}
@@ -557,6 +557,10 @@
 
     function research(q) {
       reset(true); var my = run, tabId = tab.id; ghostStop(); input.blur();
+      if (LOCAL_DRAFT) {
+        showPanel('preview-only', '<div class="preview-result"><span class="preview-result-label">Example research view</span><h3>' + esc(q) + '</h3><p>Galore would organize the answer around the investments this idea touches, the evidence behind them, and what could change the case.</p><div><b>Connections</b><span>Which investments relate to the idea, and why?</span></div><div><b>Evidence</b><span>What source supports each connection?</span></div><div><b>Checks</b><span>What might weaken it, and how did it compare in the past?</span></div><a class="btn btn-go" href="/waitlist" data-sheet><span>Join the waitlist</span></a><small>Illustrative layout. No research, returns, or trades are generated here.</small></div>');
+        return;
+      }
       if (tabId === 'video' || (tabId === 'belief' && G.SAMPLES.indexOf(q) < 0)) {
         var dest = joined() ? APP + '#home' : '/waitlist';
         var label = tabId === 'video' ? 'Analyze this post in Galore' : 'Research this belief in Galore';
