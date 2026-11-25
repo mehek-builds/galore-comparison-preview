@@ -84,15 +84,15 @@
   sheet.className = 'sheet-wrap'; sheet.id = 's6-signup'; sheet.setAttribute('role', 'dialog'); sheet.setAttribute('aria-modal', 'true'); sheet.setAttribute('aria-labelledby', 's6-signup-title');
   sheet.innerHTML = '<div class="sheet-bg" data-close></div><div class="sheet"><div class="sheet-grip" aria-hidden="true"></div><button class="sheet-x" type="button" aria-label="Close waitlist" data-close></button>' +
     '<span class="sheet-logo" data-galore-wordmark></span>' +
-    '<div class="wl-join"><h2 id="s6-signup-title">Join the waitlist</h2></div>' +
+    '<div class="wl-join"><h2 id="s6-signup-title">Join the waitlist</h2><p class="preview-signup-context">Preview only: no details are sent or saved. The actual waitlist is free and does not activate an account; paper access is offered in batches.</p></div>' +
     '<form class="wl-form" aria-label="Galore waitlist">' +
     '<label class="fld"><span>First name</span><input name="firstName" type="text" autocomplete="given-name" maxlength="80" required></label>' +
     '<label class="fld"><span>Last name</span><input name="lastName" type="text" autocomplete="family-name" maxlength="80" required></label>' +
     '<label class="fld w2"><span>Email</span><input name="email" type="email" autocomplete="email" inputmode="email" maxlength="254" required placeholder="you@example.com"></label>' +
     '<label class="fld w2" data-creator-request-field hidden><span>Which creator would you like to follow?</span><input name="creatorRequest" type="text" maxlength="120" placeholder="Creator name or @handle" disabled></label>' +
+    '<p class="wl-note">The actual waitlist sends launch updates. <a href="/waitlist-privacy.html" target="_blank" rel="noopener">How your details would be handled</a></p>' +
     '<button class="btn btn-go" type="submit"><span data-signup-submit-label>Join the waitlist</span></button></form>' +
     '<p class="wl-progress" data-signup-progress role="status" aria-live="polite">Add your name and email to join.</p>' +
-    '<p class="wl-note">You agree to receive launch updates. <a href="/waitlist-privacy.html" target="_blank" rel="noopener">Privacy</a></p>' +
     '<p class="wl-err" role="status" data-signup-status></p>' +
     '<div class="wl-receipt" role="status" data-signup-receipt hidden></div>' +
     '<div class="wl-done" data-waitlist-envelope hidden><div class="gate-rings" aria-hidden="true">' + RING + '</div><h2 id="s6-letter-title" tabindex="-1">You’re on the list</h2>' +
@@ -288,7 +288,7 @@
       }
       signupReceipt.hidden = false;
       if (requestingCreator) {
-        var confirmation = document.createElement('span'); confirmation.textContent = 'Creator request saved for ' + payload.creatorRequest + '.';
+        var confirmation = document.createElement('span'); confirmation.textContent = LOCAL_DRAFT ? 'Preview request for ' + payload.creatorRequest + '. Nothing was saved.' : 'Creator request saved for ' + payload.creatorRequest + '.';
         signupReceipt.append(document.createElement('br'), confirmation);
         var token = result.creatorRemovalToken;
         if (typeof token === 'string' && /^[a-f0-9]{64}$/.test(token)) {
@@ -799,10 +799,10 @@
   if (tape) {
     var TK = ['NVDA','AAPL','MSFT','AMD','ANT','SPY','COIN','BTC','ETH'], half = Math.ceil(TK.length / 2);
     var item = function (t, hid) {
-      return '<a class="mk" href="' + (t === 'ANT' ? '/waitlist' : '/waitlist?asset=' + t) + '" ' +
-        (t === 'ANT' ? 'data-sheet' : 'data-gate="asset" data-name="' + t + '"') +
+      return '<a class="mk" href="' + (t === 'ANT' ? '/dashboard-preview.html#research' : '/waitlist?asset=' + t) + '" ' +
+        (t === 'ANT' ? '' : 'data-gate="asset" data-name="' + t + '"') +
         (hid ? ' tabindex="-1" aria-hidden="true"' : '') + '>' +
-        '<span class="mk-l">' + logoImg(t) + '</span><span class="mk-n"><b>' + esc(t === 'ANT' ? 'Anthropic' : ASSET_NAMES[t]) + '</b><i>' + t + '</i></span></a>';
+        '<span class="mk-l">' + logoImg(t) + '</span><span class="mk-n"><b>' + esc(t === 'ANT' ? 'Anthropic' : ASSET_NAMES[t]) + '</b><i>' + (t === 'ANT' ? 'Private company' : t) + '</i></span></a>';
     };
     var row = function (list, rev) {
       return '<div class="tape-row' + (rev ? ' rev' : '') + '"><div class="tape-track"><div class="tape-group">' +
