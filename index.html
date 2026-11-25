@@ -34,6 +34,7 @@ html.gx-intro:not(.gx-go) body.intro :is(.hero-h span,.hero-sub,.hero-btns,.hero
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&amp;family=Geist+Mono:wght@400;500&amp;family=display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/landing/ripple/ripple.css?v=20261125design2">
 <link rel="stylesheet" href="/landing/ripple/comparison-preview.css?v=1">
+<link rel="stylesheet" href="/landing/ripple/motion-preview.css?v=1">
 <style>
 .hero-example{display:flex;align-items:baseline;gap:15px;margin-top:29px;padding:0 0 13px;border:0;border-bottom:1px solid rgba(232,238,242,.35);background:none;color:#E8EEF2;text-align:left;cursor:pointer;font:inherit}
 .hero-example span{font-size:13px;color:rgba(232,238,242,.65);white-space:nowrap}
@@ -86,92 +87,26 @@ html.gx-intro:not(.gx-go) body.intro :is(.hero-h span,.hero-sub,.hero-btns,.hero
   
 </section>
 
-<section class="story sec" id="example" aria-labelledby="story-title">
-  <div class="story-head">
-    <div><p class="story-label">An idea, made concrete</p><h2 id="story-title">From one sentence to a clearer decision.</h2></div>
-    <p>Galore breaks an idea into the investments it might affect, then shows the links and the open questions.</p>
-  </div>
-  <div class="story-layout">
-    <div class="story-belief"><span>Example belief</span><p>AI will need much more electricity.</p><small>Illustrative example, not a recommendation.</small></div>
-    <div class="story-detail">
-      <div class="story-tabs" role="tablist" aria-label="Explore the example">
-        <button type="button" role="tab" id="story-tab-0" aria-controls="story-panel-0" aria-selected="true" tabindex="0">Find the links</button>
-        <button type="button" role="tab" id="story-tab-1" aria-controls="story-panel-1" aria-selected="false" tabindex="-1">Check the idea</button>
-        <button type="button" role="tab" id="story-tab-2" aria-controls="story-panel-2" aria-selected="false" tabindex="-1">Keep watch</button>
+<section class="motion-story" id="example" aria-labelledby="motion-title">
+  <div class="motion-head"><p class="motion-kicker">A Galore walkthrough</p><h2 id="motion-title">One thought. A clearer next step.</h2><p>Watch an idea move through the product. Every screen is illustrative.</p></div>
+  <div class="motion-frame" data-motion-demo>
+    <div class="motion-top"><span class="motion-wordmark">galore<span class="motion-ring" aria-hidden="true"></span></span><span>Interactive preview</span><button type="button" data-motion-toggle aria-label="Pause walkthrough">Pause</button></div>
+    <div class="motion-screen">
+      <div class="motion-scene is-current" id="motion-idea" role="tabpanel" aria-labelledby="motion-tab-idea" data-scene="idea">
+        <span class="motion-caption">Start with your words</span><div class="motion-composer"><span class="motion-caret-line" data-motion-typing>AI will need much more electricity.</span><span class="motion-caret" aria-hidden="true"></span></div><div class="motion-echo">No ticker required.</div>
       </div>
-      <div class="story-panel" role="tabpanel" id="story-panel-0" aria-labelledby="story-tab-0">
-        <p class="story-panel-lead">A short reason for each connection, so you know what you are looking at.</p>
-        <div class="story-row"><b>Power equipment</b><span>Data centers need electrical gear before new capacity can come online.</span></div>
-        <div class="story-row"><b>Energy producers</b><span>More computing can mean more demand for power from the grid.</span></div>
-        <div class="story-row"><b>Broad funds</b><span>See a wider set of companies if one stock feels too narrow.</span></div>
+      <div class="motion-scene" id="motion-links" role="tabpanel" aria-labelledby="motion-tab-links" data-scene="links" hidden>
+        <span class="motion-caption">Three possible connections</span><div class="motion-origin">AI will need much more electricity</div><div class="motion-branches" aria-hidden="true"><i></i><i></i><i></i></div><div class="motion-assets"><div><span class="motion-symbol">VRT</span><b>Vertiv</b><small>Power and cooling</small></div><div><span class="motion-symbol">CEG</span><b>Constellation Energy</b><small>Electricity generation</small></div><div><span class="motion-symbol">ETF</span><b>Utilities funds</b><small>Broader exposure</small></div></div><p class="motion-disclosure">Example connections, not recommendations or live quotes.</p>
       </div>
-      <div class="story-panel" role="tabpanel" id="story-panel-1" aria-labelledby="story-tab-1" hidden>
-        <p class="story-panel-lead">See the sources, historical comparison, and risks before you follow anything.</p>
-        <div class="story-row"><b>What supports it?</b><span>Trace each connection to the underlying evidence.</span></div>
-        <div class="story-row"><b>What could break it?</b><span>New capacity, lower demand, or a different way to power data centers.</span></div>
-        <div class="story-row"><b>What happened before?</b><span>Compare past performance with a benchmark over the same dates.</span></div>
-      </div>
-      <div class="story-panel" role="tabpanel" id="story-panel-2" aria-labelledby="story-tab-2" hidden>
-        <p class="story-panel-lead">Choose what to follow and practice before any live trading is offered.</p>
-        <div class="story-row"><b>Build a paper plan</b><span>Pick your own positions and see how they fit together.</span></div>
-        <div class="story-row"><b>Follow people</b><span>View public trades from creators and investors alongside your idea.</span></div>
-        <div class="story-row"><b>Revisit the belief</b><span>See relevant updates and decide for yourself what to change.</span></div>
-      </div>
-      <div class="story-action"><a href="/waitlist" data-sheet>Join the waitlist</a><span>Paper accounts first</span></div>
+      <div class="motion-scene" id="motion-check" role="tabpanel" aria-labelledby="motion-tab-check" data-scene="check" hidden>
+        <span class="motion-caption">See the case, including what could break it</span><div class="motion-case"><div><span>Evidence to inspect</span><b>Demand forecasts</b><small>Dated source required</small></div><div><span>Company connection</span><b>Equipment orders</b><small>Filing link required</small></div><div class="motion-risk"><span>What could change?</span><b>More efficient chips</b><small>Less power per unit of compute</small></div></div><svg class="motion-trace" viewBox="0 0 650 90" aria-hidden="true"><path d="M25 72 C130 68 130 20 245 36 S420 75 625 22"/></svg></div>
+      <div class="motion-scene" id="motion-order" role="tabpanel" aria-labelledby="motion-tab-order" data-scene="order" hidden>
+        <span class="motion-caption">You decide what happens next</span><div class="motion-ticket"><span>Practice order · simulated</span><div class="motion-ticket-main"><b>Power equipment</b><strong>$1,000</strong></div><div class="motion-ticket-row"><span>Paper cash before</span><span>$10,000</span></div><div class="motion-ticket-row"><span>Paper cash after</span><span>$9,000</span></div><button type="button" data-motion-approve>Approve paper order</button><p data-motion-order-status>Awaiting your approval. Nothing is placed automatically.</p></div></div>
+      <div class="motion-scene" id="motion-watch" role="tabpanel" aria-labelledby="motion-tab-watch" data-scene="watch" hidden>
+        <span class="motion-caption">Keep the reason attached</span><div class="motion-watch"><span>Saved belief</span><b>AI will need much more electricity.</b><div class="motion-watch-update"><span>Fictional update</span><strong>What if construction slows?</strong><p>Check the new evidence against your original idea.</p></div><a href="/dashboard-preview.html#watchlist">Open the watchlist preview</a></div></div>
     </div>
-  </div>
-</section>
-
-<section class="compare-journey sec" id="journey" aria-labelledby="journey-title">
-  <div class="compare-head"><div><p class="story-label">Inside the product</p><h2 id="journey-title">Follow an idea all the way through.</h2></div><p>Most people hear an investing idea and then have to work out the rest alone. This is what a complete decision could look like in Galore.</p></div>
-  <div class="journey-layout">
-    <div class="journey-controls" role="tablist" aria-label="Explore a sample idea">
-      <button type="button" role="tab" aria-selected="true" aria-controls="journey-idea" id="journey-tab-idea">Your idea</button>
-      <button type="button" role="tab" aria-selected="false" aria-controls="journey-links" id="journey-tab-links" tabindex="-1">Possible links</button>
-      <button type="button" role="tab" aria-selected="false" aria-controls="journey-evidence" id="journey-tab-evidence" tabindex="-1">Check the case</button>
-      <button type="button" role="tab" aria-selected="false" aria-controls="journey-practice" id="journey-tab-practice" tabindex="-1">Practice</button>
-      <button type="button" role="tab" aria-selected="false" aria-controls="journey-watch" id="journey-tab-watch" tabindex="-1">Keep watching</button>
-    </div>
-    <div class="journey-stage">
-      <div role="tabpanel" id="journey-idea" aria-labelledby="journey-tab-idea"><span>Sample conversation</span><p class="journey-speech">“AI will need much more electricity.”</p><p>Start with a sentence, not a ticker or a strategy form.</p></div>
-      <div role="tabpanel" id="journey-links" aria-labelledby="journey-tab-links" hidden><span>Illustrative connections</span><h3>Where the idea could show up</h3><div class="journey-row"><b>Vertiv · VRT</b><p>Power and cooling equipment for data centers.</p></div><div class="journey-row"><b>Constellation Energy · CEG</b><p>Electricity generation could matter if demand rises.</p></div><div class="journey-row"><b>Utilities funds</b><p>A broader way to look at the power sector.</p></div><small>These are examples of connections, not recommendations or live prices.</small></div>
-      <div role="tabpanel" id="journey-evidence" aria-labelledby="journey-tab-evidence" hidden><span>Source trail</span><h3>What supports it, and what could change?</h3><div class="journey-row"><b>Check</b><p>Demand forecasts, orders and dated company filings.</p></div><div class="journey-row"><b>Challenge</b><p>Better chip efficiency or slower data center construction.</p></div><div class="journey-row"><b>Compare</b><p>A historical range, basket weights, assumptions and benchmark together.</p></div></div>
-      <div role="tabpanel" id="journey-practice" aria-labelledby="journey-tab-practice" hidden><span>Order states</span><h3>You review the practice order.</h3><p>A proposed amount appears beside your paper cash and current exposure. You can change it, approve it or leave it. Live brokerage execution is unavailable here.</p><a href="/dashboard-preview.html#portfolio">Try the simulated order review</a></div>
-      <div role="tabpanel" id="journey-watch" aria-labelledby="journey-tab-watch" hidden><span>After the decision</span><h3>The original reason stays attached.</h3><p>If relevant evidence changes, the update appears beside the belief you saved. A sample alert never changes a position on its own.</p><a href="/dashboard-preview.html#watchlist">Explore the sample watchlist</a></div>
-    </div>
-  </div>
-</section>
-
-<section class="compare-assets sec" id="asset-examples" aria-labelledby="asset-title">
-  <div class="compare-head"><div><p class="story-label">Different ways to explore</p><h2 id="asset-title">One belief can touch more than one market.</h2></div><p>These examples show the shape of a result. Access, trading hours and risk depend on the instrument and account. The preview does not quote a market price.</p></div>
-  <div class="asset-lines"><div><strong>Stocks</strong><p>A named company, with a short explanation of the connection.</p><span>Example: Vertiv · VRT</span></div><div><strong>ETFs</strong><p>A wider group of companies when one stock is too narrow.</p><span>Example: a utilities fund</span></div><div><strong>Crypto</strong><p>An always-on market, when it actually relates to the belief.</p><span>Example: Bitcoin · BTC</span></div></div>
-  <p class="asset-foot">Stocks and ETFs have exchange hours; crypto markets can run around the clock. A product that cannot be traded through Galore should say so before any order flow.</p>
-</section>
-
-<section class="compare-learn sec" id="learn" aria-labelledby="learn-title">
-  <div class="compare-head"><div><p class="story-label">Understand before you decide</p><h2 id="learn-title">A little more context, when you want it.</h2></div><p>Open a short explanation here, then return to the same idea. These guides are part of the design preview.</p></div>
-  <div class="learn-rows"><details><summary>What does a backtest actually tell me?</summary><p>It compares a clearly defined set of past prices. The period, weights, fees, rebalancing rules and benchmark all affect the result. Past performance cannot tell you what will happen next.</p></details><details><summary>How should I read a politician’s disclosure?</summary><p>Look for the original filing, transaction date, filing date and reported value range. The disclosure may arrive after the transaction. A model portfolio built from filings is not that person’s actual account return.</p></details><details><summary>What happens when evidence changes?</summary><p>A useful update points back to the original belief, links a dated source, and explains which part of the case changed. You decide whether to edit a watchlist or place a practice order.</p></details></div>
-</section>
-
-<section class="sec dash" id="dashboard" aria-labelledby="dash-title">
-  <h2 class="sec-h" id="dash-title">See it all in one place.</h2>
-  <p class="sec-intro">Explore ideas, watch people you follow, and review what you chose for your paper portfolio.</p>
-  <div class="preview-app" aria-label="Illustrative Galore dashboard layout">
-    <div class="preview-app-top"><strong>galore</strong><span>Paper account preview</span></div>
-    <div class="preview-app-tabs" role="tablist" aria-label="Dashboard sections">
-      <button id="preview-tab-home" role="tab" aria-controls="preview-panel-home" aria-selected="true" tabindex="0">Home</button>
-      <button id="preview-tab-explore" role="tab" aria-controls="preview-panel-explore" aria-selected="false" tabindex="-1">Explore</button>
-      <button id="preview-tab-portfolio" role="tab" aria-controls="preview-panel-portfolio" aria-selected="false" tabindex="-1">Portfolio</button>
-      <button id="preview-tab-watchlist" role="tab" aria-controls="preview-panel-watchlist" aria-selected="false" tabindex="-1">Watchlist</button>
-    </div>
-    <div class="preview-app-content">
-      <div class="preview-app-panel" role="tabpanel" id="preview-panel-home" aria-labelledby="preview-tab-home"><p class="preview-app-kicker">Your starting point</p><h3>What do you think happens next?</h3><p>Write down an idea and explore the investments behind it.</p><div class="preview-app-belief">AI will need much more electricity.</div><span class="preview-app-hint">See connections, evidence, and risks</span></div>
-      <div class="preview-app-panel" role="tabpanel" id="preview-panel-explore" aria-labelledby="preview-tab-explore" hidden><p class="preview-app-kicker">Explore ideas</p><h3>Start with a belief.</h3><p>Pick one to see how Galore breaks it down.</p><div class="preview-app-list"><div>AI will need much more electricity.</div><div>More people will travel instead of buying luxury goods.</div><div>Companies will spend more on cybersecurity.</div></div></div>
-      <div class="preview-app-panel" role="tabpanel" id="preview-panel-portfolio" aria-labelledby="preview-tab-portfolio" hidden><p class="preview-app-kicker">Your paper portfolio</p><h3>See what you chose together.</h3><p>Your positions and allocations appear here once you start using a paper account.</p><div class="preview-app-list"><div>Equities</div><div>ETFs</div><div>Crypto</div></div></div>
-      <div class="preview-app-panel" role="tabpanel" id="preview-panel-watchlist" aria-labelledby="preview-tab-watchlist" hidden><p class="preview-app-kicker">Your watchlist</p><h3>Know why you are watching.</h3><p>Follow an idea and see relevant updates alongside the reason you added it.</p><div class="preview-app-belief">Your watched ideas will appear here.</div></div>
-    </div>
-  </div>
-  <p class="preview-app-caption">Illustrative layout. <a href="/dashboard-preview.html">Open the interactive dashboard walkthrough</a> to explore research, watchlist, a simulated paper portfolio, people, and account settings.</p>
+    <div class="motion-foot"><div class="motion-tabs" role="tablist" aria-label="Walkthrough scenes"><button type="button" id="motion-tab-idea" role="tab" aria-controls="motion-idea" aria-selected="true" data-motion-step="0"><span></span>Idea</button><button type="button" id="motion-tab-links" role="tab" aria-controls="motion-links" aria-selected="false" tabindex="-1" data-motion-step="1"><span></span>Connections</button><button type="button" id="motion-tab-check" role="tab" aria-controls="motion-check" aria-selected="false" tabindex="-1" data-motion-step="2"><span></span>Evidence</button><button type="button" id="motion-tab-order" role="tab" aria-controls="motion-order" aria-selected="false" tabindex="-1" data-motion-step="3"><span></span>Paper order</button><button type="button" id="motion-tab-watch" role="tab" aria-controls="motion-watch" aria-selected="false" tabindex="-1" data-motion-step="4"><span></span>Watch</button></div><button type="button" data-motion-replay>Replay</button></div>
+  </div><p class="motion-note">Illustrative interface. No research is generated, prices fetched, or trades placed. <a href="/dashboard-preview.html">Explore the interactive dashboard</a></p>
 </section>
 
 <section class="markets" id="markets" aria-label="Illustrative markets to explore" data-depth=".45">
@@ -299,6 +234,7 @@ html.gx-intro:not(.gx-go) body.intro :is(.hero-h span,.hero-sub,.hero-btns,.hero
 <script src="/landing/ripple/water.js?v=20261123calm"></script>
 <script src="/landing/ripple/site.js?v=20261125design4"></script>
 <script src="/landing/ripple/comparison-preview.js?v=1"></script>
+<script src="/landing/ripple/motion-preview.js?v=1"></script>
 <script>
 document.querySelector('[data-hero-example]')?.addEventListener('click', function () {
   const consoleRoot = document.querySelector('[data-console="hero"]');
