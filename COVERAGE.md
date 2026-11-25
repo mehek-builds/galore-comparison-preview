@@ -41,16 +41,16 @@ This map records what the **comparison preview** actually demonstrates. “Shown
 | 33 | Examples for multiple asset classes | Shown: stocks, ETFs, crypto |
 | 34 | Around-the-clock claim tied to an example | Adapted: crypto hours distinguished from stocks |
 | 35 | Price with a time range | Held: no unsupported live price in preview |
-| 36 | Cause then effect sequence | Shown: journey tabs |
+| 36 | Cause then effect sequence | Shown: timed five-scene walkthrough |
 | 37 | Explicit order/deployment states | Adapted: review, confirm, simulated completion |
-| 38 | Education beyond hero | Shown: three openable guides |
+| 38 | Education beyond hero | Adapted: evidence scene, dashboard preview and FAQ |
 | 39 | Moving market strip | Shown: two-row illustrative tape |
 | 40 | Worked idea-to-trade example | Shown: electricity to practice order |
 | 41 | Small labels mark decision states | Shown: journey and dashboard |
 | 42 | Repeated small market examples show breadth | Adapted: asset examples and tape |
 | 43 | Distinct heading and body type | Adapted: Geist size and weight hierarchy; no borrowed brand font |
-| 44 | Instrument/account FAQs | Shown: FAQ, More, education guides |
-| 45 | Guides/courses/blog support learning | Adapted: expandable guides; no fictitious published posts |
+| 44 | Instrument/account FAQs | Shown: FAQ and dashboard More view |
+| 45 | Guides/courses/blog support learning | Adapted: FAQ and research preview; no fictitious published posts |
 | 46 | Different reference canvas colors | Held: Galore uses its specified #000412 |
 | 47 | Figures paired with consequence | Adapted: paper cash and order amount have clear meaning |
 | 48 | Simulated labels beside numbers | Shown: balance, order, comparison chart |
@@ -60,7 +60,7 @@ This map records what the **comparison preview** actually demonstrates. “Shown
 | 52 | No 390px horizontal overflow | Static responsive rules; visual viewport test pending |
 | 53 | No 430px horizontal overflow | Static responsive rules; visual viewport test pending |
 | 54 | Mobile heading composition | Adapted: responsive clamps |
-| 55 | Long feature-tour rhythm | Adapted: journey, assets, dashboard, features, learn |
+| 55 | Long feature-tour rhythm | Adapted: timed walkthrough, features, dashboard and FAQ |
 | 56 | Access action before first mobile scroll | Adapted: hero and sticky waitlist |
 | 57 | Nav compresses to logo/menu | Shown: responsive nav |
 | 58 | Announcement strip persists | Held: no real announcement to display |
@@ -80,7 +80,7 @@ This map records what the **comparison preview** actually demonstrates. “Shown
 | 72 | Ambient 1.4–4.5s effects | Adapted: background flow and controls |
 | 73 | Entrance plus persistent movement | Adapted: hero entry and tape |
 | 74 | Phased animation offsets | Shown: existing staged feature examples |
-| 75 | Progression motion | Shown: story and journey state change |
+| 75 | Progression motion | Shown: timed scene transitions, drawing and type animation |
 | 76 | Motion near action | Adapted: button press and input feedback |
 | 77 | Opacity/translate/scale reveal | Adapted: tab panels, menus, sheet |
 | 78 | Background motion around hero | Shown: subtle water canvas |
@@ -89,13 +89,13 @@ This map records what the **comparison preview** actually demonstrates. “Shown
 | 81 | Separate app/dashboard access path | Shown: dashboard preview link |
 | 82 | Phone status bar/device frame | Held: no fake device frame around the full dashboard |
 | 83 | Founder portrait and first-person copy | Held: no approved portrait or quotation |
-| 84 | Category/screen/explanation modules | Shown: asset rows and journey |
+| 84 | Category/screen/explanation modules | Shown: connections scene and feature modules |
 | 85 | Financial tables labeled | Adapted: paper balance and order rows |
 | 86 | Comparison FAQ | Shown: risks, backtest and access questions |
 | 87 | Objection-focused Questions section | Adapted: FAQs |
 | 88 | Scannable institution list | Held: no verified Galore supported institutions |
 | 89 | Message time cues | Held: no invented live alert timestamp |
-| 90 | Selectable demo states | Shown: journey, story and dashboard |
+| 90 | Selectable demo states | Shown: walkthrough scenes and dashboard |
 | 91 | TradingView reference | Held: no confirmed integration |
 | 92 | Compact status words | Shown: preview and order states |
 | 93 | Three dated article previews | Held: no invented publication dates or stories |
@@ -103,7 +103,7 @@ This map records what the **comparison preview** actually demonstrates. “Shown
 | 95 | Agent and user messages differentiated | Adapted: sample journey and approval language |
 | 96 | Reduced-motion rules | Shown: stylesheet and controls |
 | 97 | Scroll-triggered reveals | Held: Galore design brief explicitly ruled out scroll fades |
-| 98 | Segmented tabs | Shown: story, journey and dashboard |
+| 98 | Segmented tabs | Shown: walkthrough and dashboard |
 | 99 | Disclosure-based FAQs | Shown: native details |
 | 100 | Accessible mobile menu states | Shown: labels and expanded state in existing menu logic |
 
