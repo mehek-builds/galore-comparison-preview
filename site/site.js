@@ -82,30 +82,37 @@
       sticky.hidden = true;
       mainCta.click();
       document.querySelector('#s6-signup').addEventListener('close', () => {
-        sticky.hidden = !media.matches;
+        sync();
         if (!sticky.hidden) sticky.focus({ preventScroll: true });
       }, { once: true });
     });
     const footer = document.querySelector('footer');
-    let mainVisible = true;
+    const inlineCtas = [mainCta, document.querySelector('.story-action a'), document.querySelector('.closing .btn-go')].filter(Boolean);
+    const visibleCtas = new Set();
     let footerVisible = false;
     const sync = () => {
-      sticky.hidden = !media.matches || mainVisible || footerVisible || !!document.querySelector('#s6-signup[open]');
+      sticky.hidden = !media.matches || visibleCtas.size > 0 || footerVisible || !!document.querySelector('#s6-signup[open]');
     };
     if ('IntersectionObserver' in window) {
       const observer = new IntersectionObserver(entries => {
         for (const entry of entries) {
-          if (entry.target === mainCta) mainVisible = entry.isIntersecting;
+          if (inlineCtas.includes(entry.target)) {
+            if (entry.isIntersecting) visibleCtas.add(entry.target);
+            else visibleCtas.delete(entry.target);
+          }
           if (entry.target === footer) footerVisible = entry.isIntersecting;
         }
         sync();
       });
-      observer.observe(mainCta);
+      inlineCtas.forEach(cta => observer.observe(cta));
       if (footer) observer.observe(footer);
     } else {
       const measure = () => {
-        const box = mainCta.getBoundingClientRect();
-        mainVisible = box.bottom > 0 && box.top < innerHeight;
+        visibleCtas.clear();
+        inlineCtas.forEach(cta => {
+          const box = cta.getBoundingClientRect();
+          if (box.bottom > 0 && box.top < innerHeight) visibleCtas.add(cta);
+        });
         footerVisible = !!footer && footer.getBoundingClientRect().top < innerHeight;
         sync();
       };

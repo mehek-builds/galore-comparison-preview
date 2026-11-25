@@ -112,3 +112,14 @@ body{font-size:17px}
 .sheet .wl-form .btn-go{min-height:48px}
 .story-tabs button:focus-visible,.story-action a:focus-visible,.btn:focus-visible{outline:2px solid #2BF08A;outline-offset:3px}
 @media(max-width:760px){.sheet{background:#000412}.site-mobile-cta{box-shadow:none}}
+@media(max-width:760px){
+ .cx-go{width:auto;min-width:112px;padding:0 10px}
+ .cx-go span{display:inline;font-size:12px}
+ .devices{padding-bottom:0}
+ .devices .laptop{display:none}
+ .devices .phone{position:relative;width:min(286px,72vw);right:auto;bottom:auto;margin:0 auto}
+ .devices .phone-bar{font-size:11px;padding:10px 16px 4px}
+ .devices .phone-bar i{height:10px}
+ .devices .phone-screen{padding:6px;border-radius:27px}
+ .dash .scan-leg{display:none}
+}
