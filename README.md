@@ -12,9 +12,9 @@ Open `/dashboard-preview.html` to explore Home, Explore, research, Watchlist, Po
 4. Each connection gets a short causal explanation.
 5. Risks and historical comparison appear before any portfolio action.
 6. The dashboard preview lets visitors explore Home, Explore, Portfolio, and Watchlist without invented returns.
-7. The six feature modules use question headings and short leads that answer a visitor's next question.
-8. The page uses open sections, borders, and spacing instead of a grid of decorative cards.
+7. Three full-width product screens replace the six inherited feature modules: a creator source trail, selectable investment research, and a paper allocation control.
+8. The page uses alternating product layouts, wide screens, borders, and spacing instead of the inherited two-column feature grid.
 9. The site uses #000412, #E8EEF2, and #2BF08A for the main canvas, text, and attention.
 10. Mobile navigation, a persistent waitlist action, keyboard tabs, reduced motion, and readable disclosure controls carry the same story to a small screen.
 
-Motion in this build includes the slow background water, continuous market tape, a timed product walkthrough with typing, branching connections, evidence trace, order review and saved-belief update, plus feature demonstrations, menu, waitlist sheet, FAQ disclosure, and press feedback. Reduced-motion settings switch the walkthrough to manual scene selection. The review site uses `noindex, nofollow`.
+Motion in this build includes the slow background water, continuous market tape, a timed product walkthrough with typing, branching connections, evidence trace, order review and saved-belief update, a creator source trail, and switching research details. The paper allocation control updates example cash and order size. Reduced-motion settings switch the walkthrough to manual scene selection. The review site uses `noindex, nofollow`.
