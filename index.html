@@ -35,6 +35,7 @@ html.gx-intro:not(.gx-go) body.intro :is(.hero-h span,.hero-sub,.hero-btns,.hero
 <link rel="stylesheet" href="/landing/ripple/ripple.css?v=20261125design2">
 <link rel="stylesheet" href="/landing/ripple/comparison-preview.css?v=1">
 <link rel="stylesheet" href="/landing/ripple/motion-preview.css?v=1">
+<link rel="stylesheet" href="/landing/ripple/showcase.css?v=1">
 <style>
 .hero-example{display:flex;align-items:baseline;gap:15px;margin-top:29px;padding:0 0 13px;border:0;border-bottom:1px solid rgba(232,238,242,.35);background:none;color:#E8EEF2;text-align:left;cursor:pointer;font:inherit}
 .hero-example span{font-size:13px;color:rgba(232,238,242,.65);white-space:nowrap}
@@ -114,75 +115,44 @@ html.gx-intro:not(.gx-go) body.intro :is(.hero-h span,.hero-sub,.hero-btns,.hero
   <div class="tape" data-tape></div>
 </section>
 
-<section class="sec feat" id="product" data-depth=".75" data-calm><span id="how-it-works"></span>
-  <h2 class="sec-h rv">What you can do with it</h2><p class="sec-intro rv">Go deeper when you want to. Each part answers a specific question.</p>
-  <div class="fgrid">
+<section class="showcase" id="product" aria-labelledby="showcase-title">
+  <div class="showcase-intro"><span class="showcase-overline">Inside Galore</span><h2 id="showcase-title">Follow the idea all the way through.</h2><a href="/dashboard-preview.html">Explore the dashboard preview</a></div>
 
-    <article class="fc fc-records rv" data-fc="records">
-      <header><h3>Who made the call?</h3></header><p class="feature-lead">A public record should show the original post, date, later updates, exits, and calls that did not work out.</p>
-      <div class="fc-body">
-        <div class="rec"><span class="av">A</span><span class="rec-n"><b>Sample creator</b><i>Illustrative profile</i></span><span class="call">Source post</span></div>
-        <div class="rec"><span class="av">B</span><span class="rec-n"><b>Follow-up</b><i>Disclosure and date</i></span><span class="call">Update</span></div>
-        <div class="rec"><span class="av">C</span><span class="rec-n"><b>Outcome</b><i>Include losing calls too</i></span><span class="call">Review</span></div>
+  <div class="showcase-block showcase-social" id="people">
+    <div class="showcase-copy"><span class="showcase-overline">From a post to a belief</span><h3>See where an idea came from.</h3><p>Open a creator's original call, the later updates, and the posts that did not work out. Keep the source in view as you form your own opinion.</p><a href="/dashboard-preview.html#people">Open the people preview</a></div>
+    <div class="social-demo" aria-label="Illustrative creator activity and idea trail">
+      <div class="social-header"><span class="demo-avatar">C</span><div><b>Sample creator</b><small>Illustrative profile</small></div><a class="social-follow" href="/dashboard-preview.html#people">View record</a></div>
+      <div class="social-quote">“AI data centers will need more power infrastructure.”</div>
+      <div class="social-source"><span>Original post</span><span>Source attached</span></div>
+      <div class="social-trail"><div><i></i><b>Original idea</b><small>See the full source</small></div><div><i></i><b>Later update</b><small>Keep the timeline intact</small></div><div><i></i><b>Public record</b><small>Include calls that missed</small></div></div>
+      <span class="demo-caption">Sample presentation only. No creator performance is asserted.</span>
+    </div>
+  </div>
+
+  <div class="showcase-block showcase-research" id="research">
+    <div class="showcase-copy"><span class="showcase-overline">Evidence next to the idea</span><h3>Look past the ticker.</h3><p>Explore what would have to happen for a company to benefit, which source could support that link, and what might weaken it.</p><a href="/dashboard-preview.html#research">Open the research preview</a></div>
+    <div class="research-demo" aria-label="Illustrative research screen">
+      <div class="demo-toolbar"><span>Research preview</span><span>Example belief</span></div>
+      <div class="research-belief">AI will need much more electricity.</div>
+      <div class="research-selector" role="tablist" aria-label="Illustrative investment connections">
+        <button type="button" id="connection-vrt" role="tab" aria-selected="true" aria-controls="connection-detail" data-connection="vrt">VRT <small>Power and cooling</small></button>
+        <button type="button" id="connection-ceg" role="tab" aria-selected="false" aria-controls="connection-detail" data-connection="ceg">CEG <small>Generation</small></button>
+        <button type="button" id="connection-etf" role="tab" aria-selected="false" aria-controls="connection-detail" data-connection="etf">ETF <small>Broad exposure</small></button>
       </div>
-      <div class="fc-foot"><a class="lk" href="/dashboard-preview.html#people">View the people walkthrough</a></div>
-    </article>
+      <div class="research-detail" id="connection-detail" role="tabpanel" aria-labelledby="connection-vrt" aria-live="polite"><span data-research-name>Vertiv · VRT</span><b data-research-link>Power and cooling for data centers</b><div class="research-evidence"><span>What to check</span><p data-research-check>Equipment orders and data center spending, with dated sources.</p></div><div class="research-risk"><span>What could change</span><p data-research-risk>More efficient chips could reduce power needed per unit of compute.</p></div></div>
+      <div class="research-bottom"><span>Illustrative connection, not a recommendation.</span><span class="research-trace" aria-hidden="true"></span></div>
+    </div>
+  </div>
 
-    <article class="fc fc-watch rv" data-fc="watch">
-      <header><h3>What changed?</h3></header><p class="feature-lead">Keep the news connected to the reason you were watching a company.</p>
-      <div class="fc-body">
-        <p class="ask"><span data-type>What's going on with Nvidia?</span></p>
-        <div class="ans">
-          <p class="s1"><b>Example scenario:</b> A leadership change could affect Nvidia.</p>
-          <p class="s2">Galore would show the source, price move, and what changed for your belief.</p>
-        </div>
-        <div class="quote s3"><img src="/landing/assets/logos/NVDA.png" alt="" width="28" height="28" loading="lazy"><span class="q-t"><b>NVDA</b><i>Source and market context</i></span></div>
-      </div>
-    </article>
-
-    <article class="fc fc-follow rv" data-fc="follow">
-      <header><h3>Who else can I follow?</h3></header><p class="feature-lead">Browse the public record of creators, investors, and politicians.</p>
-      <div class="fc-body">
-        <ol class="lb" data-lb>
-          <li><a href="/dashboard-preview.html#people"><img class="av" src="/landing/assets/product-portraits/nancy-pelosi.jpg" alt="" loading="lazy"><span class="rec-n"><b>Nancy Pelosi</b><i>Former Speaker of the House</i></span><span class="ret">View record</span></a></li>
-          <li><a href="/dashboard-preview.html#people"><img class="av" src="https://upload.wikimedia.org/wikipedia/commons/d/df/Warren_Buffett_in_2010_%28cropped%29.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="var s=document.createElement('span');s.className='av';s.textContent='WB';this.replaceWith(s)"><span class="rec-n"><b>Warren Buffett</b><i>Berkshire Hathaway chairman emeritus</i></span><span class="ret">View record</span></a></li>
-          <li><a href="/dashboard-preview.html#people"><img class="av" src="https://pbs.twimg.com/profile_images/1782845672829423617/xuyhQIY5_400x400.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="var s=document.createElement('span');s.className='av';s.textContent='CW';this.replaceWith(s)"><span class="rec-n"><b>Cathie Wood</b><i>ARK Invest founder and CEO</i></span><span class="ret">View record</span></a></li>
-          <li><a href="/dashboard-preview.html#people"><img class="av" src="https://pbs.twimg.com/profile_images/1619837521059348481/9UeNLFmD_400x400.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="var s=document.createElement('span');s.className='av';s.textContent='BA';this.replaceWith(s)"><span class="rec-n"><b>Bill Ackman</b><i>Pershing Square CEO</i></span><span class="ret">View record</span></a></li>
-          <li><a href="/dashboard-preview.html#people"><span class="av">DT</span><span class="rec-n"><b>David Tepper</b><i>Appaloosa founder, Carolina Panthers owner</i></span><span class="ret">View record</span></a></li>
-        </ol>
-      </div>
-      <div class="fc-foot"><span class="cap">Illustrative directory. No holdings or returns asserted here</span><a class="lk" href="/waitlist" data-sheet>Join the waitlist</a></div>
-    </article>
-
-    <article class="fc fc-post rv" data-fc="post">
-      <header><h3>Where did that idea come from?</h3></header><p class="feature-lead">See how a public post could become an investing idea. The preview does not read links.</p>
-      <div class="fc-body">
-        <div class="post-top">
-          <div class="thumb"><span class="pbtn" aria-hidden="true"></span><span class="thumb-t">Data Center Richness <i>on YouTube</i></span></div>
-          <div class="paste"><span>Choose a platform to try a sample link</span>
-            <span class="soc">
-              <button type="button" class="soc-b" data-label="YouTube" title="YouTube" aria-label="Paste a YouTube link"><img src="/landing/assets/social/youtube.svg" alt="" loading="lazy"></button>
-              <button type="button" class="soc-b" data-label="TikTok" title="TikTok" aria-label="Paste a TikTok link"><img src="/landing/assets/social/tiktok.svg" alt="" loading="lazy"></button>
-              <button type="button" class="soc-b" data-label="Instagram" title="Instagram" aria-label="Paste an Instagram link"><img src="/landing/assets/social/instagram.svg" alt="" loading="lazy"></button>
-              <button type="button" class="soc-b" data-label="Reddit" title="Reddit" aria-label="Paste a Reddit link"><img src="/landing/assets/social/reddit.svg" alt="" loading="lazy"></button>
-              <button type="button" class="soc-b" data-label="X" title="X" aria-label="Paste an X link"><img src="/landing/assets/social/x.svg" alt="" loading="lazy"></button>
-              <button type="button" class="soc-b" data-label="Substack" title="Substack" aria-label="Paste a Substack link"><img src="/landing/assets/social/substack.svg" alt="" loading="lazy"></button>
-            </span>
-          </div>
-        </div>
-        <ol class="flow">
-          <li class="s1"><span class="k">From the post</span><p>Example claim: On-site power may help data centers facing grid delays.</p></li>
-          <li class="s2"><span class="k">Belief</span><p>AI data centers facing grid delays will buy more on-site power.</p></li>
-          <li class="s3"><span class="k">Illustrative connections</span>
-            <p class="ideas"><span><b>Fuel cells</b> Could supply some on-site power</span><span><b>Energy infrastructure</b> Could affect gas delivery</span></p></li>
-        </ol>
-      </div>
-    </article>
-
-    <article class="fc fc-practice gedge rv" data-fc="practice"><header><h3>How would it have done?</h3></header><p class="feature-lead">Put a belief beside past prices and a familiar benchmark.</p><div class="fc-body"><p class="pr-belief">Energy powers the AI buildout.</p><p class="cap">Compare this idea with historical prices and the S&amp;P 500. Each result shows its dates, sources, and risks.</p></div><div class="fc-foot"><a class="btn btn-line" href="#try" data-focus-try><span>Try an example</span></a></div></article>
-
-    <article class="fc fc-port rv" data-fc="port"><header><h3>What have I chosen?</h3></header><p class="feature-lead">See your positions together before deciding what comes next.</p><div class="fc-body"><p class="cap">Track what you choose across equities, ETFs, and crypto. Your positions and allocations appear here once you use a paper account.</p><ul class="alloc"><li><span class="al-n"><b>Equities</b></span></li><li><span class="al-n"><b>ETFs</b></span></li><li><span class="al-n"><b>Crypto</b></span></li></ul></div><div class="fc-foot"><a class="btn btn-line" href="/waitlist" data-sheet><span>Join the waitlist</span></a></div></article>
-
+  <div class="showcase-block showcase-portfolio" id="paper-plan">
+    <div class="showcase-copy"><span class="showcase-overline">Your decision</span><h3>Try a paper plan before committing.</h3><p>Choose a practice amount, see its share of a sample account, and review the order. Every approval stays yours.</p><a href="/dashboard-preview.html#portfolio">Open the paper portfolio</a></div>
+    <div class="portfolio-demo" aria-label="Interactive simulated paper allocation">
+      <div class="demo-toolbar"><span>Paper account</span><span>$10,000 starting cash</span></div>
+      <div class="portfolio-display"><div class="portfolio-ring" data-portfolio-ring><span data-allocation-percent>10%</span><small>of sample cash</small></div><div class="portfolio-values"><span>Example amount</span><strong data-allocation-amount>$1,000</strong><small>Available paper cash afterward: <span data-remaining-cash>$9,000</span></small></div></div>
+      <label class="portfolio-control" for="portfolio-range">Adjust example amount <input id="portfolio-range" type="range" min="100" max="5000" step="100" value="1000"><span><small>$100</small><small>$5,000</small></span></label>
+      <button class="portfolio-review" type="button" data-paper-review>Review paper order</button>
+      <p class="portfolio-feedback" data-paper-feedback role="status">Illustrative only. No order is placed.</p>
+    </div>
   </div>
 </section>
 
@@ -235,6 +205,7 @@ html.gx-intro:not(.gx-go) body.intro :is(.hero-h span,.hero-sub,.hero-btns,.hero
 <script src="/landing/ripple/site.js?v=20261125design4"></script>
 <script src="/landing/ripple/comparison-preview.js?v=1"></script>
 <script src="/landing/ripple/motion-preview.js?v=1"></script>
+<script src="/landing/ripple/showcase.js?v=1"></script>
 <script>
 document.querySelector('[data-hero-example]')?.addEventListener('click', function () {
   const consoleRoot = document.querySelector('[data-console="hero"]');
