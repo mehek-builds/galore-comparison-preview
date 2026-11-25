@@ -30,7 +30,7 @@
     if (name === 'portfolio') renderOrders();
     if (name === 'people') renderPeople();
     history.replaceState(null, '', '#' + name);
-    $('#content').scrollIntoView({block:'start',behavior:'instant'});
+    $('#content').scrollIntoView({block:'start',behavior:'auto'});
   }
   function renderResearch() {
     $('#research-belief').textContent = belief;
@@ -123,12 +123,23 @@
     }
   });
   document.addEventListener('click',e => {
-    const nav=e.target.closest('[data-view]'), sample=e.target.closest('[data-belief]'), opener=e.target.closest('[data-open]'), person=e.target.closest('[data-people]'), remove=e.target.closest('[data-remove]');
+    const nav=e.target.closest('[data-view]'), sample=e.target.closest('[data-belief]'), opener=e.target.closest('[data-open]'), person=e.target.closest('[data-people]'), remove=e.target.closest('[data-remove]'), period=e.target.closest('[data-period]');
     if (nav) { view(nav.dataset.view); return; }
     if (sample) { $('#belief-input').value=sample.dataset.belief;research(sample.dataset.belief);return; }
     if (opener) { open(opener.dataset.open);return; }
     if (person) { renderPeople(person.dataset.people);return; }
     if (remove) { saved.splice(Number(remove.dataset.remove),1);persist();renderSaved(); }
+    if (period) {
+      $$('[data-period]').forEach(b=>b.setAttribute('aria-pressed',String(b===period)));
+      $('#period-label').textContent=period.dataset.period;
+      const paths={
+        '3 months':['M44 163 L135 156 L224 171 L314 134 L405 117 L496 141 L620 94','M44 163 L135 152 L224 148 L314 151 L405 133 L496 135 L620 115'],
+        '1 year':['M44 168 L135 145 L224 153 L314 99 L405 127 L496 72 L620 53','M44 165 L135 157 L224 160 L314 141 L405 144 L496 116 L620 105'],
+        '5 years':['M44 174 L135 179 L224 139 L314 150 L405 98 L496 112 L620 59','M44 170 L135 165 L224 151 L314 141 L405 130 L496 120 L620 108']
+      };
+      $('#idea-line').setAttribute('d',paths[period.dataset.period][0]);
+      $('#benchmark-line').setAttribute('d',paths[period.dataset.period][1]);
+    }
   });
   const initial=location.hash.slice(1);
   view($('[data-page="'+initial+'"]') ? initial : 'home');
