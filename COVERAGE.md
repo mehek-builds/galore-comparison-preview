@@ -2,7 +2,7 @@
 
 The 100 observations Mehek referred to came from [Astor](https://www.astor.app/), [Conviction](https://www.convictiontrade.ai/), [Volaren](https://www.volaren.ai/), and [Mochatrade](https://mochatrade.com/). They are presentation observations, not the separate Galore 100-friction list. The former coverage file confused those lists and was incorrect.
 
-This map records what the **comparison preview** actually demonstrates. “Shown” means an inspectable UI pattern; “Adapted” means the idea appears in Galore’s own product language; “Held” means the observation would require a verified business fact, supported product capability, or a conflicting brand choice. None of those held points should be presented as already built.
+This map records what the **comparison preview** demonstrates. It is not a list of 100 new changes. Several observations were already present on trygalore.com, including a large headline, a waitlist button, FAQ, market tape, and mobile navigation. “Shown” means an inspectable UI pattern, whether inherited or newly added; “Adapted” means the idea appears in Galore’s own product language; “Held” means the observation would require a verified business fact, supported product capability, or a conflicting brand choice. The clearly new visual treatments are the five-scene walkthrough, the three large product demonstrations, the source trail, selectable research, and the interactive paper allocation.
 
 | # | Observation from the four-site comparison | Preview treatment |
 |---|---|---|
@@ -14,13 +14,13 @@ This map records what the **comparison preview** actually demonstrates. “Shown
 | 6 | Specific assets early | Shown: VRT and CEG in illustrative journey |
 | 7 | Tickers with names | Shown: Vertiv/VRT and Constellation/CEG |
 | 8 | Concrete amount, price, return, or weight | Adapted: $10,000 simulated starting cash and order input; no invented market return |
-| 9 | Promise, product evidence, trust, questions | Adapted: hero, journey, dashboard, FAQ |
+| 9 | Promise, product evidence, trust, questions | Adapted: hero, walkthrough, three product screens, FAQ |
 | 10 | Questions cover limits | Shown: FAQs and access status |
 | 11 | Primary action recurs near bottom | Shown: closing waitlist |
 | 12 | Footer links grouped by purpose | Adapted: About, Pricing, Contact, Privacy and Terms |
 | 13 | Visitor addressed directly | Shown: hero and walkthrough |
-| 14 | Feature headings name outcomes | Shown: question headings |
-| 15 | Short headline beside operational explanation | Shown: comparison sections |
+| 14 | Feature headings name outcomes | Shown: product screen headings |
+| 15 | Short headline beside operational explanation | Shown: wide product sections |
 | 16 | General claims grounded in examples | Shown: one electricity belief across journey |
 | 17 | Idea becomes possible action | Shown: idea to paper order flow |
 | 18 | Agent keeps watching after setup | Adapted: belief attached to fictional watchlist update |
@@ -28,11 +28,11 @@ This map records what the **comparison preview** actually demonstrates. “Shown
 | 20 | Journey after signup | Adapted: waitlist, invitation, paper account states |
 | 21 | Named brokerage integration | Held: no verified Galore connection in preview |
 | 22 | Robinhood as example account | Held: no actual connected Robinhood account |
-| 23 | Portfolio shapes a suggestion | Adapted: paper cash and exposure context |
+| 23 | Portfolio shapes a suggestion | Adapted: interactive paper allocation and cash context |
 | 24 | Approval before real-money execution | Adapted: review before simulated paper order; live unavailable |
 | 25 | Who controls decision and custody | Adapted: user approval, no brokerage or funds held here |
 | 26 | Paper and live clearly separated | Shown: hero, dashboard, access |
-| 27 | Concentration warning | Adapted: watchlist/portfolio explanation; no invented risk percentage |
+| 27 | Concentration warning | Adapted: paper allocation percentage of sample cash; no invented risk threshold |
 | 28 | Founder story after product | Held: founder narrative requires approved copy |
 | 29 | Investor/partner proof | Held: no unverified logos |
 | 30 | Press coverage proof | Held: no unverified coverage |
@@ -46,7 +46,7 @@ This map records what the **comparison preview** actually demonstrates. “Shown
 | 38 | Education beyond hero | Adapted: evidence scene, dashboard preview and FAQ |
 | 39 | Moving market strip | Shown: two-row illustrative tape |
 | 40 | Worked idea-to-trade example | Shown: electricity to practice order |
-| 41 | Small labels mark decision states | Shown: journey and dashboard |
+| 41 | Small labels mark decision states | Shown: walkthrough, research and paper controls |
 | 42 | Repeated small market examples show breadth | Adapted: asset examples and tape |
 | 43 | Distinct heading and body type | Adapted: Geist size and weight hierarchy; no borrowed brand font |
 | 44 | Instrument/account FAQs | Shown: FAQ and dashboard More view |
@@ -60,7 +60,7 @@ This map records what the **comparison preview** actually demonstrates. “Shown
 | 52 | No 390px horizontal overflow | Static responsive rules; visual viewport test pending |
 | 53 | No 430px horizontal overflow | Static responsive rules; visual viewport test pending |
 | 54 | Mobile heading composition | Adapted: responsive clamps |
-| 55 | Long feature-tour rhythm | Adapted: timed walkthrough, features, dashboard and FAQ |
+| 55 | Long feature-tour rhythm | Shown: timed walkthrough, alternating source/research/portfolio screens and FAQ |
 | 56 | Access action before first mobile scroll | Adapted: hero and sticky waitlist |
 | 57 | Nav compresses to logo/menu | Shown: responsive nav |
 | 58 | Announcement strip persists | Held: no real announcement to display |
@@ -76,12 +76,12 @@ This map records what the **comparison preview** actually demonstrates. “Shown
 | 68 | Slow market-strip timing | Shown: continuous tape |
 | 69 | Alternate strip timing | Shown: two rows at different speeds |
 | 70 | Faster proof-strip rhythm | Held: no verified proof logos |
-| 71 | Short activity cue | Adapted: input and feature activity |
+| 71 | Short activity cue | Adapted: typing, creator source trail and research switching |
 | 72 | Ambient 1.4–4.5s effects | Adapted: background flow and controls |
 | 73 | Entrance plus persistent movement | Adapted: hero entry and tape |
-| 74 | Phased animation offsets | Shown: existing staged feature examples |
+| 74 | Phased animation offsets | Shown: source trail and timed walkthrough scenes |
 | 75 | Progression motion | Shown: timed scene transitions, drawing and type animation |
-| 76 | Motion near action | Adapted: button press and input feedback |
+| 76 | Motion near action | Shown: research selection, paper range updates and button press |
 | 77 | Opacity/translate/scale reveal | Adapted: tab panels, menus, sheet |
 | 78 | Background motion around hero | Shown: subtle water canvas |
 | 79 | Sans display type | Shown: Geist |
@@ -89,7 +89,7 @@ This map records what the **comparison preview** actually demonstrates. “Shown
 | 81 | Separate app/dashboard access path | Shown: dashboard preview link |
 | 82 | Phone status bar/device frame | Held: no fake device frame around the full dashboard |
 | 83 | Founder portrait and first-person copy | Held: no approved portrait or quotation |
-| 84 | Category/screen/explanation modules | Shown: connections scene and feature modules |
+| 84 | Category/screen/explanation modules | Shown: three distinct product screens and connections scene |
 | 85 | Financial tables labeled | Adapted: paper balance and order rows |
 | 86 | Comparison FAQ | Shown: risks, backtest and access questions |
 | 87 | Objection-focused Questions section | Adapted: FAQs |
