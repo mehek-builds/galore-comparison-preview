@@ -28,6 +28,32 @@
   });
 })();
 (()=>{
+  const tabs=[...document.querySelectorAll('.journey-controls [role="tab"]')];
+  if(!tabs.length)return;
+  function choose(index,focus){
+    tabs.forEach((tab,i)=>{
+      const active=i===index;
+      tab.setAttribute('aria-selected',String(active));
+      tab.tabIndex=active?0:-1;
+      const panel=document.getElementById(tab.getAttribute('aria-controls'));
+      panel.hidden=!active;
+    });
+    if(focus)tabs[index].focus();
+  }
+  tabs.forEach((tab,i)=>{
+    tab.addEventListener('click',()=>choose(i,false));
+    tab.addEventListener('keydown',event=>{
+      let n=i;
+      if(event.key==='ArrowRight')n=(i+1)%tabs.length;
+      else if(event.key==='ArrowLeft')n=(i-1+tabs.length)%tabs.length;
+      else if(event.key==='Home')n=0;
+      else if(event.key==='End')n=tabs.length-1;
+      else return;
+      event.preventDefault();choose(n,true);
+    });
+  });
+})();
+(()=>{
   const tabs=[...document.querySelectorAll('.preview-app-tabs [role="tab"]')];
   function choose(index,focus){
     tabs.forEach((tab,i)=>{
