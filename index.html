@@ -122,6 +122,37 @@ html.gx-intro:not(.gx-go) body.intro :is(.hero-h span,.hero-sub,.hero-btns,.hero
   </div>
 </section>
 
+<section class="compare-journey sec" id="journey" aria-labelledby="journey-title">
+  <div class="compare-head"><div><p class="story-label">Inside the product</p><h2 id="journey-title">Follow an idea all the way through.</h2></div><p>Most people hear an investing idea and then have to work out the rest alone. This is what a complete decision could look like in Galore.</p></div>
+  <div class="journey-layout">
+    <div class="journey-controls" role="tablist" aria-label="Explore a sample idea">
+      <button type="button" role="tab" aria-selected="true" aria-controls="journey-idea" id="journey-tab-idea">Your idea</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="journey-links" id="journey-tab-links" tabindex="-1">Possible links</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="journey-evidence" id="journey-tab-evidence" tabindex="-1">Check the case</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="journey-practice" id="journey-tab-practice" tabindex="-1">Practice</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="journey-watch" id="journey-tab-watch" tabindex="-1">Keep watching</button>
+    </div>
+    <div class="journey-stage">
+      <div role="tabpanel" id="journey-idea" aria-labelledby="journey-tab-idea"><span>Sample conversation</span><p class="journey-speech">“AI will need much more electricity.”</p><p>Start with a sentence, not a ticker or a strategy form.</p></div>
+      <div role="tabpanel" id="journey-links" aria-labelledby="journey-tab-links" hidden><span>Illustrative connections</span><h3>Where the idea could show up</h3><div class="journey-row"><b>Vertiv · VRT</b><p>Power and cooling equipment for data centers.</p></div><div class="journey-row"><b>Constellation Energy · CEG</b><p>Electricity generation could matter if demand rises.</p></div><div class="journey-row"><b>Utilities funds</b><p>A broader way to look at the power sector.</p></div><small>These are examples of connections, not recommendations or live prices.</small></div>
+      <div role="tabpanel" id="journey-evidence" aria-labelledby="journey-tab-evidence" hidden><span>Source trail</span><h3>What supports it, and what could change?</h3><div class="journey-row"><b>Check</b><p>Demand forecasts, orders and dated company filings.</p></div><div class="journey-row"><b>Challenge</b><p>Better chip efficiency or slower data center construction.</p></div><div class="journey-row"><b>Compare</b><p>A historical range, basket weights, assumptions and benchmark together.</p></div></div>
+      <div role="tabpanel" id="journey-practice" aria-labelledby="journey-tab-practice" hidden><span>Order states</span><h3>You review the practice order.</h3><p>A proposed amount appears beside your paper cash and current exposure. You can change it, approve it or leave it. Live brokerage execution is unavailable here.</p><a href="/dashboard-preview.html#portfolio">Try the simulated order review</a></div>
+      <div role="tabpanel" id="journey-watch" aria-labelledby="journey-tab-watch" hidden><span>After the decision</span><h3>The original reason stays attached.</h3><p>If relevant evidence changes, the update appears beside the belief you saved. A sample alert never changes a position on its own.</p><a href="/dashboard-preview.html#watchlist">Explore the sample watchlist</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="compare-assets sec" id="asset-examples" aria-labelledby="asset-title">
+  <div class="compare-head"><div><p class="story-label">Different ways to explore</p><h2 id="asset-title">One belief can touch more than one market.</h2></div><p>These examples show the shape of a result. Access, trading hours and risk depend on the instrument and account. The preview does not quote a market price.</p></div>
+  <div class="asset-lines"><div><strong>Stocks</strong><p>A named company, with a short explanation of the connection.</p><span>Example: Vertiv · VRT</span></div><div><strong>ETFs</strong><p>A wider group of companies when one stock is too narrow.</p><span>Example: a utilities fund</span></div><div><strong>Crypto</strong><p>An always-on market, when it actually relates to the belief.</p><span>Example: Bitcoin · BTC</span></div></div>
+  <p class="asset-foot">Stocks and ETFs have exchange hours; crypto markets can run around the clock. A product that cannot be traded through Galore should say so before any order flow.</p>
+</section>
+
+<section class="compare-learn sec" id="learn" aria-labelledby="learn-title">
+  <div class="compare-head"><div><p class="story-label">Understand before you decide</p><h2 id="learn-title">A little more context, when you want it.</h2></div><p>Open a short explanation here, then return to the same idea. These guides are part of the design preview.</p></div>
+  <div class="learn-rows"><details><summary>What does a backtest actually tell me?</summary><p>It compares a clearly defined set of past prices. The period, weights, fees, rebalancing rules and benchmark all affect the result. Past performance cannot tell you what will happen next.</p></details><details><summary>How should I read a politician’s disclosure?</summary><p>Look for the original filing, transaction date, filing date and reported value range. The disclosure may arrive after the transaction. A model portfolio built from filings is not that person’s actual account return.</p></details><details><summary>What happens when evidence changes?</summary><p>A useful update points back to the original belief, links a dated source, and explains which part of the case changed. You decide whether to edit a watchlist or place a practice order.</p></details></div>
+</section>
+
 <section class="sec dash" id="dashboard" aria-labelledby="dash-title">
   <h2 class="sec-h" id="dash-title">See it all in one place.</h2>
   <p class="sec-intro">Explore ideas, watch people you follow, and review what you chose for your paper portfolio.</p>
