@@ -4,6 +4,8 @@ This is a separate review site. It does not alter trygalore.com or the Galore ap
 
 Open `/dashboard-preview.html` to explore Home, Explore, research, Watchlist, Portfolio, people, leaderboard, account access, brokerage, and AI connection states. The flow includes example belief entry, invalid-input feedback, practice-order review, and an invited-member sign-in illustration. `COVERAGE.md` maps the 100 presentation observations from Astor, Conviction, Volaren, and Mochatrade to shown, adapted, or held treatments. The earlier coverage file mistakenly mapped a separate list of Galore friction points.
 
+Open `/comparison.html` to see the current trygalore.com homepage and this preview in adjacent panes, with section jump buttons and a filterable 100-observation inventory. The original homepage remains unchanged, so the live site is the before state. The panes scroll independently.
+
 ## Comparison ideas implemented
 
 1. The hero says what to do in ordinary language and gives one primary action.
