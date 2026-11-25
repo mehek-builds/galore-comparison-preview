@@ -22,6 +22,7 @@ body{font-size:17px}
 .hero-btns{margin-top:32px}
 .hero-btns .btn{min-height:48px}
 .hero-return{margin-top:16px}
+.hero-return{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
 .hero-in>[data-console]{margin-top:clamp(62px,8vw,105px);max-width:770px}
 .cx-top{margin-bottom:14px}
 .cx-label{color:rgba(232,238,242,.66);letter-spacing:.09em}
