@@ -8,7 +8,7 @@ Open `/dashboard-preview.html` to explore Home, Explore, research, Watchlist, Po
 
 1. The hero says what to do in ordinary language and gives one primary action.
 2. A single belief carries through the explanation instead of changing examples at every step.
-3. The example reveals connections, checks, and follow-through through direct tabs.
+3. The example plays through five timed scenes: idea, connections, evidence, practice order, and watch. Visitors can pause, replay, or select a scene.
 4. Each connection gets a short causal explanation.
 5. Risks and historical comparison appear before any portfolio action.
 6. The dashboard preview lets visitors explore Home, Explore, Portfolio, and Watchlist without invented returns.
@@ -17,4 +17,4 @@ Open `/dashboard-preview.html` to explore Home, Explore, research, Watchlist, Po
 9. The site uses #000412, #E8EEF2, and #2BF08A for the main canvas, text, and attention.
 10. Mobile navigation, a persistent waitlist action, keyboard tabs, reduced motion, and readable disclosure controls carry the same story to a small screen.
 
-Motion in this build includes the slow background water, continuous market tape, typing prompt, feature demonstrations, tab changes, menu, waitlist sheet, FAQ disclosure, and short press feedback. The review site uses `noindex, nofollow`.
+Motion in this build includes the slow background water, continuous market tape, a timed product walkthrough with typing, branching connections, evidence trace, order review and saved-belief update, plus feature demonstrations, menu, waitlist sheet, FAQ disclosure, and press feedback. Reduced-motion settings switch the walkthrough to manual scene selection. The review site uses `noindex, nofollow`.
