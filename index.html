@@ -113,30 +113,25 @@ html.gx-intro:not(.gx-go) body.intro :is(.hero-h span,.hero-sub,.hero-btns,.hero
   </div>
 </section>
 
-<section class="sec dash" id="dashboard" data-depth=".3" data-calm>
-  <h2 class="sec-h rv">See it all in one place.</h2>
-  <p class="sec-intro rv">Explore ideas, watch people you follow, and review what you chose for your paper portfolio.</p>
-  <div class="scan-leg rv"><div class="cx-tabs" data-scan role="group" aria-label="App tabs"><button type="button" aria-pressed="true">Home</button><button type="button" aria-pressed="false">Explore</button><button type="button" aria-pressed="false">Portfolio</button><button type="button" aria-pressed="false">Watchlist</button><i class="cx-ink" aria-hidden="true"></i></div></div>
-  <div class="devices rv" data-devices>
-    <div class="laptop">
-      <div class="laptop-screen">
-        <div class="app-bar" aria-hidden="true">
-          <span class="app-logo" data-galore-wordmark></span>
-          <span class="app-tabs"><span>Home</span><span>Explore</span><span>Portfolio</span><span>Watchlist</span></span>
-          <span class="app-dot"></span>
-        </div>
-        <div class="shot"><img src="/landing/assets/galore-dashboard-13w-desktop-1440.webp" alt="The Galore dashboard on a laptop" loading="lazy" decoding="async"><div class="hl" data-hl="laptop" aria-hidden="true"><b></b><i></i></div></div>
-      </div>
-      <div class="laptop-base"></div>
+<section class="sec dash" id="dashboard" aria-labelledby="dash-title">
+  <h2 class="sec-h" id="dash-title">See it all in one place.</h2>
+  <p class="sec-intro">Explore ideas, watch people you follow, and review what you chose for your paper portfolio.</p>
+  <div class="preview-app" aria-label="Illustrative Galore dashboard layout">
+    <div class="preview-app-top"><strong>galore</strong><span>Paper account preview</span></div>
+    <div class="preview-app-tabs" role="tablist" aria-label="Dashboard sections">
+      <button id="preview-tab-home" role="tab" aria-controls="preview-panel-home" aria-selected="true" tabindex="0">Home</button>
+      <button id="preview-tab-explore" role="tab" aria-controls="preview-panel-explore" aria-selected="false" tabindex="-1">Explore</button>
+      <button id="preview-tab-portfolio" role="tab" aria-controls="preview-panel-portfolio" aria-selected="false" tabindex="-1">Portfolio</button>
+      <button id="preview-tab-watchlist" role="tab" aria-controls="preview-panel-watchlist" aria-selected="false" tabindex="-1">Watchlist</button>
     </div>
-    <div class="phone">
-      <div class="phone-screen">
-        <div class="phone-bar"><span>9:41</span><i></i></div>
-        <div class="pshot"><img src="/landing/assets/galore-dashboard-13w-mobile-1179.webp" alt="The Galore dashboard on a phone" loading="lazy" decoding="async"><div class="hl" data-hl="phone" aria-hidden="true"><b></b><i></i></div></div>
-      </div>
+    <div class="preview-app-content">
+      <div class="preview-app-panel" role="tabpanel" id="preview-panel-home" aria-labelledby="preview-tab-home"><p class="preview-app-kicker">Your starting point</p><h3>What do you think happens next?</h3><p>Write down an idea and explore the investments behind it.</p><div class="preview-app-belief">AI will need much more electricity.</div><span class="preview-app-hint">See connections, evidence, and risks</span></div>
+      <div class="preview-app-panel" role="tabpanel" id="preview-panel-explore" aria-labelledby="preview-tab-explore" hidden><p class="preview-app-kicker">Explore ideas</p><h3>Start with a belief.</h3><p>Pick one to see how Galore breaks it down.</p><div class="preview-app-list"><div>AI will need much more electricity.</div><div>More people will travel instead of buying luxury goods.</div><div>Companies will spend more on cybersecurity.</div></div></div>
+      <div class="preview-app-panel" role="tabpanel" id="preview-panel-portfolio" aria-labelledby="preview-tab-portfolio" hidden><p class="preview-app-kicker">Your paper portfolio</p><h3>See what you chose together.</h3><p>Your positions and allocations appear here once you start using a paper account.</p><div class="preview-app-list"><div>Equities</div><div>ETFs</div><div>Crypto</div></div></div>
+      <div class="preview-app-panel" role="tabpanel" id="preview-panel-watchlist" aria-labelledby="preview-tab-watchlist" hidden><p class="preview-app-kicker">Your watchlist</p><h3>Know why you are watching.</h3><p>Follow an idea and see relevant updates alongside the reason you added it.</p><div class="preview-app-belief">Your watched ideas will appear here.</div></div>
     </div>
-    <div class="dev-rings" aria-hidden="true"><i></i><i></i><i></i></div>
   </div>
+  <p class="preview-app-caption">Illustrative layout. No returns or trades are shown.</p>
 </section>
 
 <section class="markets" id="markets" aria-label="Example markets" data-depth=".45">
