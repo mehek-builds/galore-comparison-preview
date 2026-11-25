@@ -1,0 +1,104 @@
+.site-preferences, .site-mobile-cta, .site-standalone {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+}
+.site-preferences[hidden], .site-mobile-cta[hidden] { display: none; }
+.site-preferences {
+  position: fixed;
+  z-index: 10000;
+  inset: auto auto max(18px, env(safe-area-inset-bottom)) 18px;
+  width: min(390px, calc(100% - 36px));
+  box-sizing: border-box;
+  padding: 16px;
+  color: #f5f6f8;
+  background: #131824;
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 2px 6px rgba(0, 0, 0, .25), 0 6px 18px -4px rgba(0, 0, 0, .3), 0 14px 44px -10px rgba(0, 0, 0, .45);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.site-preferences p { margin: 0 0 12px; }
+.site-preferences a { color: inherit; text-decoration: underline; }
+.site-preferences-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.site-preferences button, .site-mobile-cta, .site-standalone a.site-primary {
+  border: 1px solid rgba(255, 255, 255, .24);
+  border-radius: 7px;
+  padding: 8px 14px;
+  min-height: 44px;
+  box-sizing: border-box;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  background: #202738;
+  color: #fff;
+}
+.site-preferences :focus-visible, .site-mobile-cta:focus-visible, .site-standalone :focus-visible {
+  outline: 2px solid #9ab9ff;
+  outline-offset: 3px;
+}
+.site-mobile-cta { display: none; }
+@media (max-width: 760px) {
+  .site-mobile-cta {
+    display: flex;
+    position: fixed;
+    z-index: 101;
+    inset: auto 16px max(12px, env(safe-area-inset-bottom)) 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    background: #eaf0ff;
+    color: #101728;
+    border-color: #eaf0ff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 2px 5px rgba(0, 0, 0, .25), 0 4px 12px -2px rgba(0, 0, 0, .3), 0 8px 24px -6px rgba(0, 0, 0, .4);
+  }
+  body:has(.site-preferences:not([hidden])) .site-mobile-cta { display: none; }
+}
+.site-standalone {
+  color-scheme: dark;
+  background: #070b15;
+  color: #eef1f8;
+  margin: 0 auto;
+  max-width: 680px;
+  padding: clamp(24px, 8vw, 88px) 22px 38px;
+  font-size: 16px;
+  line-height: 1.65;
+}
+.site-standalone h1 {
+  font-size: clamp(38px, 8vw, 62px);
+  line-height: 1.05;
+  letter-spacing: -.045em;
+  margin: 40px 0 18px;
+}
+.site-standalone h2 { margin: 32px 0 10px; }
+.site-standalone a { color: #c4d5ff; }
+.site-standalone a.site-primary { display: inline-flex; margin-top: 12px; text-decoration: none; align-items: center; }
+.site-standalone footer { margin-top: 44px; display: flex; flex-wrap: wrap; gap: 14px; font-size: 14px; }
+.site-preferences-link { color: inherit; }
+.site-footer-links { display: flex; flex-wrap: wrap; gap: 8px 14px; font-size: 14px; }
+.site-footer-links a { color: inherit; }
+@media (max-width: 760px) {
+  body.landing-home a.site-mobile-cta { color: #101728; }
+}
+
+/* 19 Nov 2026: labels are trimmed to cap height and baseline so they sit in the true middle of the
+   button, and every button dips to .97 when pressed. */
+.site-preferences button, .site-mobile-cta, .site-standalone a.site-primary { transition: transform .45s cubic-bezier(.3,1.4,.4,1); }
+.site-preferences button:active, .site-mobile-cta:active, .site-standalone a.site-primary:active { transform: scale(.97); transition-duration: .12s; }
+@supports (text-box-trim: trim-both) {
+  .site-preferences button { text-box: trim-both cap alphabetic; }
+  .site-standalone a.site-primary { display: inline-block; align-content: center; text-box: trim-both cap alphabetic; }
+  @media (max-width: 760px) {
+    .site-mobile-cta { display: block; align-content: center; text-box: trim-both cap alphabetic; }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-preferences button, .site-mobile-cta, .site-standalone a.site-primary { transition: none; }
+  .site-preferences button:active, .site-mobile-cta:active, .site-standalone a.site-primary:active { transform: none; }
+}
+/* round 2: tabular numbers and balanced text in the banner too; a pressed button catches a thin top highlight */
+.site-preferences *, .site-mobile-cta, .site-standalone * { font-variant-numeric: tabular-nums !important; }
+.site-preferences p, .site-standalone p { text-wrap: pretty; }
+.site-preferences button:active, .site-standalone a.site-primary:active { box-shadow: inset 0 1px 0 rgba(255, 255, 255, .22); }
+
+

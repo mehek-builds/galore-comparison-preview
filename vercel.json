@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/landing/assets/:path*", "destination": "https://trygalore.com/landing/assets/:path*" },
+    { "source": "/waitlist", "destination": "/waitlist.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/pricing", "destination": "/pricing.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/live", "destination": "/live.html" }
+  ],
+  "headers": [{ "source": "/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }]
+}
