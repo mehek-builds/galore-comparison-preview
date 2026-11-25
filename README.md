@@ -2,7 +2,7 @@
 
 This is a separate review site. It does not alter trygalore.com or the Galore app. The website waitlist interaction is simulated and sends nothing. The interactive dashboard walkthrough shows fictional research shapes, example source requirements, a saved watchlist, and sample paper orders stored only in the browser session. It does not show actual performance or place trades. Contact points to the current live contact page.
 
-Open `/dashboard-preview.html` to explore Home, Explore, research, Watchlist, Portfolio, people, leaderboard, account access, brokerage, and AI connection states. The flow includes example belief entry, invalid-input feedback, practice-order review, and an invited-member sign-in illustration. `COVERAGE.md` maps the original 100 friction points to the prototype. Its “covered” classification refers to what can be judged visually here, not implementation in the production app.
+Open `/dashboard-preview.html` to explore Home, Explore, research, Watchlist, Portfolio, people, leaderboard, account access, brokerage, and AI connection states. The flow includes example belief entry, invalid-input feedback, practice-order review, and an invited-member sign-in illustration. `COVERAGE.md` maps the 100 presentation observations from Astor, Conviction, Volaren, and Mochatrade to shown, adapted, or held treatments. The earlier coverage file mistakenly mapped a separate list of Galore friction points.
 
 ## Comparison ideas implemented
 
